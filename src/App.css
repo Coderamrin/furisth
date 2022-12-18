@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav a {
+  padding: 1rem;
+}
+
+.nav-mobile {
+  @apply block md:hidden fixed top-16 duration-500  text-white md:text-gray-800 bg-gray-800 md:bg-transparent h-full w-[100%]
+}
+
+.header {
+  @apply flex justify-between items-center px-5 py-2 fixed w-[100%] text-white duration-500
+}
