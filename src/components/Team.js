@@ -48,15 +48,15 @@ const Team = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-between items-center">
-            {
-                teamData.map(team => {
-                    return <div className="text-center mb-10 text-white">
-                        <img src={team.img} alt={team.title} className="mx-auto mb-5" />
-                        <p className="text-lg">{team.name}</p>
-                        <p className="text-gray-500">{team.title}</p>
-                    </div>
-                })
-            }
+          {teamData.map((team, i) => {
+            return (
+              <div key={i} className="text-center mb-10 text-white">
+                <img src={team.img} alt={team.title} className="mx-auto mb-5" />
+                <p className="text-lg">{team.name}</p>
+                <p className="text-gray-500">{team.title}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -27,9 +27,9 @@ const Projects = () => {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-10 text-center">
-          {projectData.map((project) => {
+          {projectData.map((project, i) => {
             return (
-              <div>
+              <div key={i}>
                 <img src={project.img} alt={project.title} className="w-full" />
                 <h4 className="text-2xl font-bold pt-10 pb-2">
                   <a href="/project-1">{project.title}</a>
