@@ -13,6 +13,8 @@ Built with React and Tailwind CSS.
 
 Used React icons for the Icons.
 
+## Live Preview
+https://furisth.netlify.app/
 
 
 ## How does it look?
